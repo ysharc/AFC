@@ -7,6 +7,7 @@ html{
 
     body{
         background-color: #fff;
+		font-family: 'Raleway';
     }
 
         header{
@@ -51,6 +52,7 @@ html{
                 justify-content: space-between;
                 padding-left: 9%;
                 padding-top: 25px;
+				position: fixed;
                 width: 100%;
             }
 
@@ -58,3 +60,28 @@ html{
                     align-self: center;
                     flex: 1 1 auto;
                 }
+		
+		.content{
+			min-height: 95vh;
+		}
+
+		footer{
+			background-color: #000;
+			color: #fff;
+			height: 280px;
+			text-align: center;
+		}
+
+			form{
+				text-align: left;
+				line-height: 4vh;
+			}
+
+				input{
+					width: 100%;
+				}
+
+			iframe{
+				display: block;
+				margin: auto;
+			}
