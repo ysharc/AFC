@@ -22,13 +22,15 @@ html{
 			flex-direction: row;
 			font-family: 'Lato', sans-serif;
 			justify-content: space-around;
+			padding: 0;
 			position: fixed;
 			width: 100%;
 			z-index: 100;
 		}
                 
                 figure{
-					width: 40vw;
+					width: 50vw;
+					margin: 0;
                 }
 
                     figure img{
@@ -40,19 +42,38 @@ html{
 
                     figcaption{
 						font-size: 1.6vmax;
+						white-space: nowrap;
                     }
 
-            nav{
-                align-items: center;
-				align-content: center;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                padding-left: 9%;
-                padding-top: 25px;
-                width: 100%;
-            }
+				.vertical {
+					display: inline-block;
+					margin-left: 10px;
+					width: 10px;
+					position: relative;
+				}
+				.vertical .mask {
+					overflow: hidden;
+					width: 20px;
+					height: 13vmin;
+				}
+				.vertical .mask:after {
+					content: '';
+					display: block;
+					margin-left: -20px;
+					width: 20px;
+					height: 100%;
+					border-radius: 12px / 125px;
+					box-shadow: 0 0 8px black;
+				}
+
+				nav{
+					align-items: center;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: space-around;
+					width: 50vw;
+				}
 
                 nav a{
                     align-self: center;
@@ -70,6 +91,9 @@ html{
 
 		.content{
 			min-height: 95vh;
+		}
+
+		#About{
 			padding-top: 15vmin;
 		}
 

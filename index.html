@@ -34,8 +34,13 @@
         <header class="container-fluid" id="banner">
 			<figure>
 				<img src="images/apj.jpg" alt="Dr. APJ Abdul Kalam" id="banner-img">
-				<figcaption>Dr. APJ Abdul Kalam <br/> Advanced Foundation School, Kurnool</figcaption>
+				<figcaption>Dr. APJ Abdul Kalam <br> Advanced Foundation School<br> Kurnool</figcaption>
 			</figure>
+
+			<div class="vertical">
+				<div class="mask"></div>
+			</div>
+
 			<nav id="navigation">
 				<a href="#About"><i class="fa fa-info-circle" aria-hidden="true"></i>
 About</a>
@@ -48,8 +53,36 @@ About</a>
 		<section id="About" class="content">
 			The Advanced Foundation School, Kurnool welcomes you. Know more about us.
 		</section>
-		<section id="Mission" class="content">
-			This is the mission.
+		<section id="Mission" class="content carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#Mission" data-slide-to="0" class="active"></li>
+				<li data-target="#Mission" data-slide-to="1"></li>
+				<li data-target="#Mission" data-slide-to="2"></li>
+				<li data-target="#Mission" data-slide-to="3"></li>
+				<li data-target="#Mission" data-slide-to="4"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<i class="fa fa-quote-left" aria-hidden="true"></i>
+					The mission is to be accomplished :P
+					<i class="fa fa-quote-right" aria-hidden="true"></i>
+					<div class="carousel-caption">
+						<h3>Chania</h3>
+						<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</section>
 		<section id="Faculty" class="content">
 			Here are the faculty
