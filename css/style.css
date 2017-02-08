@@ -97,6 +97,76 @@ html{
 			padding-top: 15vmin;
 		}
 
+		#Mission{
+			width:100vw;
+			position:relative;
+			overflow:hidden;
+		}
+			.css-carousel {
+				width:500vw;
+				-webkit-animation: css-carousel 20s linear infinite;
+				-moz-animation: css-carousel 20s linear infinite;
+				-ms-animation: css-carousel 20s linear infinite;
+				animation: css-carousel 20s linear infinite;
+			}
+
+			.css-carousel .css-img{
+				display:inline-block;
+				padding: 10vw;
+				text-align: center;
+				width:100vw;
+			}
+			.css-carousel img:not(:first-child){
+				float:left;
+			}
+				.or-spacer {
+					margin-left: 15vw;
+					width: 50vw;
+					position: relative;
+				}
+				.or-spacer .mask {
+					overflow: hidden;
+					height: 20px;
+				}
+				.or-spacer .mask:after {
+					content: '';
+					display: block;
+					margin: -25px auto 0;
+					width: 100%;
+					height: 25px;
+					border-radius: 125px / 12px;
+					box-shadow: 0 0 8px black;
+				}
+
+			@-webkit-keyframes css-carousel {
+				0%, 23% {margin-left:0}
+				25%, 48% { margin-left:-100%; }
+				50%, 73% { margin-left:-200%; }
+				75%, 98% { margin-left:-300%;}
+				100% { margin-left:0;}
+			}
+			@-moz-keyframes css-carousel {
+				0%, 23% {margin-left:0}
+				25%, 48% { margin-left:-100%; }
+				50%, 73% { margin-left:-200%; }
+				75%, 98% { margin-left:-300%;}
+				100% { margin-left:0;}
+			}
+			@-ms-keyframes css-carousel {
+				0%, 23% {margin-left:0}
+				25%, 48% { margin-left:-100%; }
+				50%, 73% { margin-left:-200%; }
+				75%, 98% { margin-left:-300%;}
+				100% { margin-left:0;}
+			}
+			@keyframes css-carousel {
+				0%, 23% {margin-left:0}
+				25%, 48% { margin-left:-100%; }
+				50%, 73% { margin-left:-200%; }
+				75%, 98% { margin-left:-300%;}
+				100% { margin-left:0;}
+			}
+
 		footer{
 			background-color: #f44336;
 			color: #000;
