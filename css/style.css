@@ -94,13 +94,20 @@ html{
 		.content{
 			font-size: 1.2vmax;
 			min-height: 95vh;
+			width: 100vw;
 		}
 
 		#About{
 			padding-top: 15vmin;
 		}
 
+			h3 {
+				margin-top: 0;
+				padding-top: 24px;
+			}
+
 		#Mission{
+			background-color: #ffeb3b;
 			width:100vw;
 			position:relative;
 			text-align: left;
@@ -114,10 +121,10 @@ html{
 			.css-carousel {
 				overflow: hidden;
 				width:500vw;
-				-webkit-animation: css-carousel 60s linear infinite;
-				-moz-animation: css-carousel 60s linear infinite;
-				-ms-animation: css-carousel 60s linear infinite;
-				animation: css-carousel 60s linear infinite;
+				-webkit-animation: css-carousel 90s linear infinite;
+				-moz-animation: css-carousel 90s linear infinite;
+				-ms-animation: css-carousel 90s linear infinite;
+				animation: css-carousel 90s linear infinite;
 			}
 
 			.css-carousel .css-img{
@@ -177,6 +184,34 @@ html{
 				75%, 99% { margin-left:-300vw; }
 				100% { margin-left:0;}
 			}
+		
+		#Faculty {
+			background-color: #b2ff59;
+		}
+
+			#faculty-container {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+				.faculty-card {
+					background-color: #064C70;
+					color: #fff;
+					box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+					transition: 0.3s;
+					border-radius: 5px;
+					margin: 9px;
+					width: 240px;
+				}
+					.faculty-card img {
+						 border-radius: 5px 5px 0 0;
+					}
+
+						.faculty-card .fa:hover {
+							color: #fff;
+						}
 
 		#Contact {
 			background-color: #064C70;
@@ -199,8 +234,12 @@ html{
 
 		footer {
 			background-color: #f44336;
+			-webkit-box-shadow: 9px 0px 9px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 9px 0px 9px 0px rgba(0,0,0,0.75);
+			box-shadow: 9px 0px 9px 0px rgba(0,0,0,0.75);
 			color: #000;
 			text-align: center;
+			width: 100vw;
 		}
 
 			iframe {
