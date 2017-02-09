@@ -125,10 +125,11 @@ About</a>
 		<p>Have a little chat with our School's digital Assistant to contact us!</p>
 		<section cf-context id="Contact" class="content">
 			<form cf-form cf-prevent-autofocus  action="https://formspree.io/ysharc@gmail.com" method="POST">
-				<input cf-questions="Hi there, I'm arya. What's your name!|Hello! My name is Arya. What's yours?|Namaste! My name is Arya. What's your name?" type=”text”>
-				<input cf-questions="Great to meet you, {previous-answer}! I'm a web form, what do you do?|Nice to meet you, {previous-answer}! I'm a web form, what do you do?" type="text">
-				<input cf-questions="So, what message do you want to convey to our school? It can be feedback or a general query or a support statement" type="text">
-				<input pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" cf-questions="Please, let me know your email so that our Administrator can get back to you." cf-error="This is not a valid email!" type="email">
+				<input cf-questions="Hi there, I'm arya. What's your name!|Hello! My name is Arya. What's yours?|Namaste! My name is Arya. What's your name?" type=”text” name="name">
+				<input cf-questions="Great to meet you, {previous-answer}! I'm a web form, what do you do?|Nice to meet you, {previous-answer}! I'm a web form, what do you do?" type="text" name="occupation">
+				<input cf-questions="So, what message do you want to convey to our school? It can be feedback or a general query or a support statement" type="text" name="message">
+				<input pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" cf-questions="Please, let me know your email so that our Administrator can get back to you." cf-error="This is not a valid email!" type="email" name="email">
+				<input type="hidden" name="_subject" value="AFC Website Query!" />
 			</form>
 		</section>
 		<footer>
