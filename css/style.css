@@ -8,6 +8,7 @@ html{
     body{
         background-color: #fff;
 		font-family: 'Raleway';
+		text-align: center;
     }
 
 		#banner{
@@ -25,7 +26,7 @@ html{
 			padding: 0;
 			position: fixed;
 			width: 100%;
-			z-index: 100;
+			z-index: 1000;
 		}
                 
                 figure{
@@ -90,6 +91,7 @@ html{
 				}
 
 		.content{
+			font-size: 1.2vmax;
 			min-height: 95vh;
 		}
 
@@ -100,18 +102,21 @@ html{
 		#Mission{
 			width:100vw;
 			position:relative;
+			text-align: left;
 			overflow:hidden;
 		}
 			.css-carousel {
+				overflow: hidden;
 				width:500vw;
-				-webkit-animation: css-carousel 20s linear infinite;
-				-moz-animation: css-carousel 20s linear infinite;
-				-ms-animation: css-carousel 20s linear infinite;
-				animation: css-carousel 20s linear infinite;
+				-webkit-animation: css-carousel 60s linear infinite;
+				-moz-animation: css-carousel 60s linear infinite;
+				-ms-animation: css-carousel 60s linear infinite;
+				animation: css-carousel 60s linear infinite;
 			}
 
 			.css-carousel .css-img{
 				display:inline-block;
+				overflow: hidden;
 				padding: 10vw;
 				text-align: center;
 				width:100vw;
@@ -139,40 +144,59 @@ html{
 				}
 
 			@-webkit-keyframes css-carousel {
-				0%, 23% {margin-left:0}
-				25%, 48% { margin-left:-100%; }
-				50%, 73% { margin-left:-200%; }
-				75%, 98% { margin-left:-300%;}
+				0%, 24% {margin-left:0}
+				25%, 49% { margin-left:-100vw; }
+				50%, 74% { margin-left:-200vw; }
+				75%, 99% { margin-left:-300vw; }
 				100% { margin-left:0;}
 			}
 			@-moz-keyframes css-carousel {
-				0%, 23% {margin-left:0}
-				25%, 48% { margin-left:-100%; }
-				50%, 73% { margin-left:-200%; }
-				75%, 98% { margin-left:-300%;}
+				0%, 24% {margin-left:0}
+				25%, 49% { margin-left:-100vw; }
+				50%, 74% { margin-left:-200vw; }
+				75%, 99% { margin-left:-300vw; }
 				100% { margin-left:0;}
 			}
 			@-ms-keyframes css-carousel {
-				0%, 23% {margin-left:0}
-				25%, 48% { margin-left:-100%; }
-				50%, 73% { margin-left:-200%; }
-				75%, 98% { margin-left:-300%;}
+				0%, 24% {margin-left:0}
+				25%, 49% { margin-left:-100vw; }
+				50%, 74% { margin-left:-200vw; }
+				75%, 99% { margin-left:-300vw; }
 				100% { margin-left:0;}
 			}
 			@keyframes css-carousel {
-				0%, 23% {margin-left:0}
-				25%, 48% { margin-left:-100%; }
-				50%, 73% { margin-left:-200%; }
-				75%, 98% { margin-left:-300%;}
+				0%, 24% {margin-left:0}
+				25%, 49% { margin-left:-100vw; }
+				50%, 74% { margin-left:-200vw; }
+				75%, 99% { margin-left:-300vw; }
 				100% { margin-left:0;}
 			}
 
-		footer{
+		#Contact {
+			background-color: #064C70;
+			min-height: 50vh;
+		}
+			text {
+				color: #000 !important;
+				font-family: 'Raleway';
+				font-size: 1.2vmax;
+			}
+
+			#Contact input {
+				border: 1px solid #000;
+				border-radius: 4%;
+			}
+
+			#Contact input:focus {
+				color: #000;
+			}
+
+		footer {
 			background-color: #f44336;
 			color: #000;
 			text-align: center;
 		}
 
-			iframe{
+			iframe {
 				margin: auto;
 			}
