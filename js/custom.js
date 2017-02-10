@@ -14,4 +14,8 @@ $(function() {
 });
 $( document ).ready(function() {
     $('#script-enabled').css("display", "block");
+	$('body').addClass('loaded');
+	setTimeout(function(){
+        $('#loader-wrapper').remove();
+    }, 2000);
 });
